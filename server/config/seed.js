@@ -9,16 +9,16 @@ var Project = require('../api/project/project.model');
 
 Project.find({}).remove(function() {
   Project.create({
-    name : 'Project',
+    name : 'Project 1',
     info : 'Lorem ipsum dolor sit amet'
   }, {
-    name : 'Project',
+    name : 'Project 2',
     info : 'Lorem ipsum dolor sit amet'
   }, {
-    name : 'Project',
+    name : 'Project 3',
     info : 'Lorem ipsum dolor sit amet'
   },  {
-    name : 'Project',
+    name : 'Project 4',
     info : 'Lorem ipsum dolor sit amet'
   });
 });

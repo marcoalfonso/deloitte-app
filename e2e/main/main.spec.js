@@ -10,6 +10,5 @@ describe('Main View', function() {
 
   it('should include jumbotron with correct data', function() {
     expect(page.h1El.getText()).toBe('PROJECT NAME');
-    
   });
 });
