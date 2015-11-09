@@ -8,7 +8,7 @@ AngularJS
 Express  
 NodeJS  
 
-Used Yeoman angular-fullstack for the scaffolding  
+Yeoman angular-fullstack for the scaffolding  
 Grunt is the task runner  
 Less for CSS pre-processor  
 
