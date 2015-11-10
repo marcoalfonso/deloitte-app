@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('deloitteAppApp').controller('MainCtrl', function ($scope, $http) {
+angular.module('deloitteAppApp').controller('MainCtrl', function ($scope, $http, $modal) {
   $scope.projects = [];
 
   $http.get('/api/projects').success(function(projects) {
@@ -34,4 +34,16 @@ angular.module('deloitteAppApp').controller('MainCtrl', function ($scope, $http)
       alt: 'Carousel Image Three'
     }
   ];
+
+  $scope.openModal = function(caption) {
+    var modalInstance = $modal.open({
+      templateUrl: 'myModalContent.html',
+      resolve: {
+        items: function () {
+          return $scope.items;
+        }
+      }
+    });
+  };
+
 });
