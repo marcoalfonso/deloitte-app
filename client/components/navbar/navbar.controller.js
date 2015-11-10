@@ -3,7 +3,7 @@
 angular.module('deloitteAppApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
-      'title': 'Home',
+      'title': 'D',
       'link': '/'
     }];
 
