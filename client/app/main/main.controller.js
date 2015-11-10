@@ -35,8 +35,8 @@ angular.module('deloitteAppApp').controller('MainCtrl', function ($scope, $http,
     }
   ];
 
-  $scope.openModal = function(caption) {
-    var modalInstance = $modal.open({
+  $scope.openModal = function() {
+    $modal.open({
       templateUrl: 'myModalContent.html',
       resolve: {
         items: function () {
