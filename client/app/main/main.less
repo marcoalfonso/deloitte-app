@@ -183,7 +183,7 @@ i.fa-times:hover {
     bottom: 0px;
     right: 30px;
     background: #e6e6e6;
-    min-width: 680px;
+    min-width: 480px;
     min-height: 445px;
 }
 
@@ -290,12 +290,17 @@ footer p {
     }
 }
 
-@media (max-width: @screen-lg-min) {
+@media (max-width: @screen-md-min) {
     .grey-container {
         display: none;
     }
 }
 
+@media (min-width: @screen-lg-min) {  
+    .grey-container {
+        min-width: 680px;
+    }
+}
 @media (min-width: @screen-md-min) {   
     .blurb p { 
         padding-right: 80px;
