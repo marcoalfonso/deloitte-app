@@ -22,13 +22,16 @@ angular.module('deloitteAppApp').controller('MainCtrl', function ($scope, $http)
   $scope.myInterval = 5000;
   $scope.slides = [
     {
-      image: 'assets/images/image-1.png'
+      image: 'assets/images/image-1.png',
+      alt: 'Carousel Image One'
     },
     {
-      image: 'assets/images/image-2.png'
+      image: 'assets/images/image-2.png',
+      alt: 'Carousel Image Two'
     },
     {
-      image: 'assets/images/image-3.png'
+      image: 'assets/images/image-3.png',
+      alt: 'Carousel Image Three'
     }
   ];
 });

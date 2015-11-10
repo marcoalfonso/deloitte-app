@@ -1,12 +1,16 @@
 h1 {
-    font-size: 80px;
+    font-size: 40px;
     font-family: 'avenir-black';
     font-weight: 600;
     letter-spacing: 20px;
 }
 
 h2 {
+    font-family: 'avenir-black';
     font-size: 30px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    letter-spacing: 10px;
 }
 
 h3 {
@@ -27,10 +31,18 @@ h3.lead {
 
 h4 {
     font-size: 14px;
+    font-family: 'avenir-black';
+    letter-spacing: 1px;
 }
 
 h1.main-title {
     margin-top: 65px;
+}
+
+.secondary-title {
+    font-family: 'avenir-black';
+    font-size: 40px;
+    letter-spacing: 10px;
 }
 
 .blurb {
@@ -55,9 +67,12 @@ h1.main-title {
 button {
     background: none;
     border: 1px solid #ffffff;
-    padding: 20px 55px;
+    padding: 15px 45px;
     font-size: 16px;
     margin-bottom: 75px;
+    font-family: 'avenir-black';
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 button:hover {
@@ -70,7 +85,6 @@ button:hover {
     text-align: center;
     padding: 30px 0;
     margin-top: 70px;
-    /*border-top: 1px solid #E5E5E5;*/
 }
 
 .navbar-text {
@@ -81,9 +95,10 @@ button:hover {
     background: #2e2e2e;
 }
 
-.image-container {
+.image-container,
+.small-image {
     background: #2e2e2e;
-    min-height: 470px;
+    min-height: 280px;
 }
 
 i.fa-plus {
@@ -94,24 +109,61 @@ i.fa-plus {
     padding: 10px 12px;
 }
 
-.small-image {
-    background: #2e2e2e;
-    min-height: 460px;
-    /*max-width: 470px;*/
+i.fa-plus:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    cursor: pointer;
 }
 
 .double-image {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 90px;
 }
+
 // Breakout area styles
 .breakout-area {
-    min-height: 540px;
+    position: relative;
+    min-height: 440px;
     background: #ffffff;
+}
+
+.breakout-area h2 {
+    font-family: 'avenir-black';
+    font-size: 28px;
+    color: #1a1a1a;
+    position: absolute;
+    left: 100px;
+    top: 80px;
+    max-width: 375px;
+}
+
+.breakout-area .separator {
+    border-top: 1px solid #9e9e9e;
+    width: 60px;
+    position: absolute;
+    left: 100px;
+    top: 220px;
+}
+
+.breakout-area p {
+    position: absolute;
+    color: #9e9e9e;
+    left: 100px;
+    top: 250px;
+    font-family: 'avenir-roman';
+    font-size: 14px;
+    max-width: 280px;
+}
+
+.more-layouts {
+    margin-top: 90px;
+    margin-bottom: 65px;
 }
 
 .grey-container {
     position: absolute;
-    top: 0px;
+    bottom: 0px;
     right: 30px;
     background: #e6e6e6;
     min-width: 680px;
@@ -123,4 +175,125 @@ i.fa-plus {
     min-height: 150px;
 }
 
+.image-caption {
+    border-top: 1px solid #ffffff;
+    margin-bottom: 40px;
+}
 
+.image-caption p {
+    font-size: 13px;
+    font-family: 'avenir-roman';
+    color: #9e9e9e;
+}
+
+.more-projects {
+    border-top: 1px solid #2e2e2e;
+}
+
+.more-projects .caption {
+    font-family: 'avenir-roman';
+    font-size: 18px;
+    color: #9e9e9e;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 60px;
+}
+
+.more-projects h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.more-projects p {
+    color: #9e9e9e;
+    font-family: 'avenir-roman';
+    font-size: 13px;
+}
+
+.double-image-container {
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+footer p {
+    font-family: 'avenir-black';
+    font-size: 10px;
+    color: #444444;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-border {
+    padding-bottom: 30px;
+    border-top: 1px solid #2e2e2e;
+    width: 80px;
+    margin: 0 auto
+}
+
+//MEDIA QUERIES
+@media (min-width: @screen-sm-min) {
+    .image-container {
+        min-height: 460px;
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    .small-image {
+        min-height: 460px;
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .breakout-area {
+        min-height: 540px;
+    }
+}
+@media (max-width: @screen-md-min) {
+    .image-caption {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    h1 {
+        font-size: 70px; 
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    .secondary-title {
+        font-size: 70px; 
+    }
+}
+
+@media (max-width: @screen-md-min) {
+    .secondary-image {
+        margin-top: 20px !important;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: @screen-lg-min) {
+    .grey-container {
+        display: none;
+    }
+}
+
+@media (min-width: @screen-md-min) {   
+    .blurb p { 
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: @screen-md-min) {   
+    .breakout-area h2  { 
+        left: 50px;
+    }
+}
+
+@media (max-width: @screen-md-min) {   
+    .breakout-area p  { 
+        left: 50px;
+    }
+}
